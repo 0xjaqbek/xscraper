@@ -4,7 +4,9 @@
   "description": "Twitter bot with AI-powered selective replies",
   "main": "working-dashboard.js",
   "scripts": {
-    "start": "node working-dashboard.js"
+    "start": "node working-dashboard.js",
+    "build": "npx playwright install --with-deps chromium",
+    "postinstall": "npx playwright install --with-deps chromium"
   },
   "dependencies": {
     "express": "^4.18.2",
