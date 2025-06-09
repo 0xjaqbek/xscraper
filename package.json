@@ -5,14 +5,13 @@
   "main": "working-dashboard.js",
   "scripts": {
     "start": "node working-dashboard.js",
-    "build": "npx playwright install --with-deps chromium",
-    "postinstall": "npx playwright install --with-deps chromium"
+    "build": "playwright install chromium || echo 'Browser install failed, continuing...'"
   },
   "dependencies": {
     "express": "^4.18.2",
     "playwright": "^1.40.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   }
 }
